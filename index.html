@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="cs">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Adoptuj Chřipku</title>
+    <meta
+      name="description"
+      content="Satirická landing page Adoptuj Chřipku s objednávkou až domů."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Noto+Sans+JP:wght@500;700;900&family=Noto+Naskh+Arabic:wght@500;700&family=Nunito:wght@700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="droplets" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="Adoptuj Chřipku">
+        <span class="brand-mark">AČ</span>
+        <span data-i18n="brand">Adoptuj Chřipku</span>
+      </a>
+      <div class="header-actions">
+        <nav class="nav" aria-label="Hlavní navigace">
+          <a href="#home" data-i18n="navHome">Home</a>
+          <a href="#about" data-i18n="navAbout">About</a>
+          <a class="nav-cta" href="#objednat" data-i18n="navOrder">Objednat</a>
+        </nav>
+        <div class="language-switcher" aria-label="Výběr jazyka">
+          <button class="lang-button is-active" type="button" data-lang="cs">CS</button>
+          <button class="lang-button" type="button" data-lang="ja">日本語</button>
+          <button class="lang-button" type="button" data-lang="tlh">tlh</button>
+          <button class="lang-button" type="button" data-lang="ms-jawi">جاوي</button>
+          <button class="lang-button" type="button" data-lang="groot">Groot</button>
+        </div>
+      </div>
+    </header>
+
+    <main id="home">
+      <div class="flu-peeker" aria-hidden="true">
+        <img src="assets/covid-plush-peeker-small.png" alt="" />
+      </div>
+
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow" data-i18n="eyebrow">Sezónní mazlíček pro odvážné domácnosti</p>
+          <h1 id="hero-title" data-i18n="heroTitle">Adoptuj Chřipku</h1>
+          <p data-i18n="heroBody">
+            Malá zelená společnice, která se drží nablízku. Neštěká, nežere
+            boty a vždycky přinese důvod zůstat doma pod dekou.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#objednat" data-i18n="heroPrimary">Chci chřipku až domů</a>
+            <a class="button secondary" href="#about" data-i18n="heroSecondary">Zjistit nesmysly</a>
+          </div>
+        </div>
+        <figure class="hero-art">
+          <img
+            src="assets/chripka-hero.jpg"
+            alt="Veselá zelená chřipka v doručovací krabici"
+            data-i18n-attr="alt:heroAlt"
+          />
+        </figure>
+      </section>
+
+      <section class="benefits" aria-label="Výhody adopce">
+        <article>
+          <span class="card-icon">01</span>
+          <h2 data-i18n="cardOneTitle">Doma hned</h2>
+          <p data-i18n="cardOneBody">
+            Vyberete intenzitu, přidáte kapesníčky a náš kurýr zazvoní přesně
+            ve chvíli, kdy jste si chtěli dát klidný víkend.
+          </p>
+        </article>
+        <article>
+          <span class="card-icon">02</span>
+          <h2 data-i18n="cardTwoTitle">Silná vazba</h2>
+          <p data-i18n="cardTwoBody">
+            Chřipka je věrná. Drží se člověka, odpovídá na každý plán a nikdy
+            neposílá formální omluvenku.
+          </p>
+        </article>
+        <article>
+          <span class="card-icon">03</span>
+          <h2 data-i18n="cardThreeTitle">Bez papírů</h2>
+          <p data-i18n="cardThreeBody">
+            Žádný rodokmen, žádné očkovací průkazy, jen měkká deka, čaj a
+            absurdní pocit, že tohle je opravdu landing page.
+          </p>
+        </article>
+      </section>
+
+      <section class="season" aria-label="Období">
+        <div class="wave" aria-hidden="true"></div>
+        <span data-i18n="season">Období: listopad až kdykoliv se to nehodí</span>
+      </section>
+
+      <section id="about" class="about">
+        <div class="about-copy">
+          <p class="eyebrow" data-i18n="aboutEyebrow">About</p>
+          <h2 data-i18n="aboutTitle">Co vlastně adoptujete?</h2>
+          <p data-i18n="aboutBody">
+            Satirický produkt, který neexistuje, ale tváří se podezřele
+            přesvědčivě. Každá chřipka je ručně imaginární, lokálně
+            nepěstovaná a dodává se s doporučenou dávkou humoru.
+          </p>
+        </div>
+        <figure class="sticker-strip">
+          <img
+            src="assets/chripka-stickers.jpg"
+            alt="Tři veselé ilustrace zelené chřipky, balíčku a čaje"
+            data-i18n-attr="alt:stickersAlt"
+          />
+        </figure>
+      </section>
+
+      <section id="objednat" class="order-section" aria-labelledby="order-title">
+        <div class="order-intro">
+          <p class="eyebrow" data-i18n="orderEyebrow">Kontakt / porta</p>
+          <h2 id="order-title" data-i18n="orderTitle">Objednejte si chřipku až domů</h2>
+          <p data-i18n="orderBody">
+            Formulář je samozřejmě parodie. Po odeslání vám nic nepřijde, což
+            je pravděpodobně nejlepší možný zdravotní výsledek.
+          </p>
+        </div>
+
+        <form class="order-form" id="fluForm">
+          <label>
+            <span data-i18n="nameLabel">Jméno adoptivního rodiče</span>
+            <input
+              name="name"
+              type="text"
+              placeholder="Např. Pan Kapesníček"
+              data-i18n-attr="placeholder:namePlaceholder"
+              required
+            />
+          </label>
+
+          <label>
+            <span data-i18n="addressLabel">Doručovací adresa</span>
+            <input
+              name="address"
+              type="text"
+              placeholder="Gauč, deka, levý roh"
+              data-i18n-attr="placeholder:addressPlaceholder"
+              required
+            />
+          </label>
+
+          <label>
+            <span data-i18n="packageLabel">Balíček chřipky</span>
+            <select name="package" required>
+              <option value="" data-i18n="packageEmpty">Vyberte variantu</option>
+              <option data-i18n="packageOne">Lehké popotahování</option>
+              <option data-i18n="packageTwo">Rodinný víkend u čaje</option>
+              <option data-i18n="packageThree">Premium: ruším všechny plány</option>
+            </select>
+          </label>
+
+          <fieldset>
+            <legend data-i18n="extrasLegend">Doplňky do pelechu</legend>
+            <label class="check">
+              <input type="checkbox" name="extras" value="Kapesníčky" />
+              <span data-i18n="extraOne">Kapesníčky v nekonečném režimu</span>
+            </label>
+            <label class="check">
+              <input type="checkbox" name="extras" value="Čaj" />
+              <span data-i18n="extraTwo">Čaj, citron a dramatické vzdychání</span>
+            </label>
+          </fieldset>
+
+          <button class="button primary submit" type="submit" data-i18n="submit">Odeslat adopci</button>
+          <p class="form-note" id="formNote" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <span data-i18n="footer">Satira. Neobjednávejte choroby, objednejte si radši odpočinek.</span>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
